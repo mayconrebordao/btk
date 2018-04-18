@@ -14,3 +14,4 @@ instalação:
  yarn run riot || npm run riot
  yarn run webpack || npm run webpack
 ```
+[abrir aplicação](http://localhost:5500) ou use o go liveserver no VSCode Studio
