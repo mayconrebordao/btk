@@ -5,3 +5,12 @@ best task manager , é uma aplicação focade no gerenciamento de tarefas(ativid
   - tarefas (atividades);
   - tudo de acordo com suas necessidades e vontades.
 permitindo que o mesmo as gerencie de maneira facil e intuitiva.
+
+instalação:
+```bash
+ git clone https://github.com/mayconrebordao/btm-ppw2.git
+ cd btm-ppw2
+ yarn install || npm install 
+ yarn run riot || npm run riot
+ yarn run webpack || npm run webpack
+```
