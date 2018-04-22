@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API provedora dos rescursos da aplicação BTM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayconrebordao/btm-ppw2.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "nodejs",
+    "express",
+    "jwt",
+    "mongo",
+    "mongoose",
+    "api"
+  ],
+  "author": "Maycon de Arruda Rebordão <r.maycon1122@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayconrebordao/btm-ppw2/issues"
+  },
+  "homepage": "https://github.com/mayconrebordao/btm-ppw2#readme"
+}
