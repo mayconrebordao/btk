@@ -91,6 +91,7 @@ router.get("/", async(req, res, next) => {
 //   res.send({ ok: true });
 // });
 
+// Rota para atualizar usuários
 router.patch("/:userId", async(req, res, next) => {
 
     const { name, password, email, nickname } = req.body;
