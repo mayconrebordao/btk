@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, res, next) => {
-    User.find((users) => {
+    User.find((error,users) => {
         res.send({
             users
         })

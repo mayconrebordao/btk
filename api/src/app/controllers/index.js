@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 
 
-fs.
 
 
 module.exports = app => {
