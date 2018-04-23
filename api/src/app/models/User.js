@@ -1,9 +1,9 @@
-import { mongoose } from "../../database";
+const mongoose = require("../../database");
 
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
-    require: True
+    require: true
   },
   nickname: {
     type: String,
@@ -40,4 +40,5 @@ const UserSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", UserSchema);
 
-export default User;
+// export default User;
+module.exports = User;

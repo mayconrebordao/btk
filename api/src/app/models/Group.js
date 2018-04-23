@@ -1,4 +1,4 @@
-import mongoose, { database } from "../../database";
+const mongoose = require("../../database");
 
 const GroupSchema = new mongoose.Schema({
   name: {

@@ -1,4 +1,4 @@
-import mongoose from "../../database";
+const mongoose = require("../../database");
 
 const TaskSchema = new mongoose.Schema({
   name: {
