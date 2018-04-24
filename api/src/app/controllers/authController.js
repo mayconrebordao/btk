@@ -21,21 +21,30 @@ router.post('/register', async (req, res, next) => {
 	try{
 		const { email, nickname } =  req.body;
 		
-		console.log(req.body);
+		// console.log(req.body);
+		// verificando se os dados de cadastro do usário não estão vazios
+		if (!req.body.name || !req.body.password  || !req.body.email || !req.body.nickname){
+			return res.status(428).send({
+				error: "Email, password, name or nickname is null, but can not be null."
+			})
+		}
+
+		// verificando se o email ja esta cadastrado no sistema, ou seja, se o usuário ja existe
 		if (await User.findOne({email})){
 			return res.status(409).send({
 				error: "User already exists!"
 			})
 		}
+		// verificando se o nickname ja existe
 		if (await User.findOne({nickname})){
 			return res.status(409).send({
 				error: "nickname is already in using!"
 			})
 		}
-
+		// criando usuário
 		User.create(req.body, (error, user) =>{
-			console.clear()
-			console.log(user)
+			// console.clear()
+			// console.log(user)
 			if(error){
 				return res.status(500).send({
 					error: "Intenal error, please trye again."
@@ -49,12 +58,12 @@ router.post('/register', async (req, res, next) => {
 				token: generateToken({ id: user._id })
 			}
 			return res.status(200).send({
-				response
+				response: response
 			})
 		})
 	}
 	catch(error){
-		console.log(error)
+		// console.log(error)
 		return res.status(500).send({
 			error: "Registration failed, please tray again."
 		})
@@ -62,16 +71,18 @@ router.post('/register', async (req, res, next) => {
 })
 
 
-// rota para autenticação de usuários
 
+// rota para autenticação de usuários
 router.post('/authenticate', async (req, res, next) => {
 	const {email, password } = req.body;
+	// verificando se os campos de senha e email não estão vazios
 	if ( ! email || ! password){
-		return res.status(28).send({
+		return res.status(428).send({
 			error: "Password and E-mail can not be null."
 		})
 	}
 
+	// consulta para verificar se o usuário existe no sistema atraves do email
 	let query =  User.findOne({email}).select('+password');
 	query.exec(async (error, user) =>{
 
@@ -81,8 +92,9 @@ router.post('/authenticate', async (req, res, next) => {
 			})
 		}
 
-		console.log(user);
-		console.log(password)
+		// console.log(user);
+		// console.log(password)
+		// verificando se as senha que esta no sistema é compativel com a informada poeloo usuário
 		if(!await bcrypt.compare(password, user.password)) {
 			return res.status(401).send({
 				error: "Password not match."
