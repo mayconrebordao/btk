@@ -100,7 +100,7 @@ router.post('/authenticate', async (req, res, next) => {
 				error: "Password not match."
 			})
 		}
-		user.password = undefined;
+		// user.password = undefined;
 		// console.log(user.id);
 		// res.send()
 		return res.status(200).send({

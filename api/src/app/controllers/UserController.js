@@ -16,8 +16,8 @@ const authMiddleware = require('../middlewares/auth');
 router.get("/:userId", async(req, res, next) => {
     const query = User.findById(req.params.userId).populate('groupTask');
     query.exec(async(error, doc) => {
-        // console.log(error)
-        if (!error) {
+        console.log(error)
+        if (doc) {
             // // const users = docs.map(user => {
             // const users = docs.map(user => {
             //     // console.log(users)
@@ -50,8 +50,8 @@ router.get("/:userId", async(req, res, next) => {
                     })
 
                 }
-            res.send({ user }).status(200);
-        } else res.send({ user: {} });
+            res.status(200).send({ user });
+        } else res.status(404).send({ error: "User not found." });
     })
 
 
