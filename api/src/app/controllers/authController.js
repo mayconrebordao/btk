@@ -9,31 +9,7 @@ const router = express.Router();
 
 // função para gerar o token do usuário
 function generateToken(params = {}) {
-  return jwt.sign(params, authConfig.secret, {
-  	expiresIn: 86400
-  });
-}
-
-
-// rota de registro de usuário
-
-router.post('/register', async (req, res, next) => {
-	try{
-		const { email, nickname } =  req.body;
-		
-		// console.log(req.body);
-		// verificando se os dados de cadastro do usário não estão vazios
-		if (!req.body.name || !req.body.password  || !req.body.email || !req.body.nickname){
-			return res.status(428).send({
-				error: "Email, password, name or nickname is null, but can not be null."
-			})
-		}
-
-		// verificando se o email ja esta cadastrado no sistema, ou seja, se o usuário ja existe
-		if (await User.findOne({email})){
-			return res.status(409).send({
-				error: "User already exists!"
-			})
+  return jwt.sign(params, authConfig.);
 		}
 		// verificando se o nickname ja existe
 		if (await User.findOne({nickname})){
