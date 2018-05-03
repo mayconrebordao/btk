@@ -61,7 +61,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="#dashboard">Funcionalidades</a>
+                          <a class="nav-link" href="">Funcionalidades</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" data-toggle="modal" data-target="#entrar">Entrar</a>
@@ -162,50 +162,4 @@
           </div>
       </footer>
     </div>
-
-    <script>
-        import Swal from 'sweetalert2'
-        cadastrar(){
-            Swal({
-                title: 'Cadastre-se',
-                showConfirmButton: false,
-                html:
-                    '<form>' +
-                    '<p><input autofocus="autofocus" value="" name="usuario[nome]" id="nome_usuario" type="text" placeholder="Nome" class="form-control" required="required"></p>' +
-                    '<p><input autofocus="autofocus" value="" name="usuario[email]" id="email_usuario" type="email" placeholder="E-mail" class="form-control" required="required"></p>' +
-                    '<p><input autocomplete="off" name="user[password]" id="senha_usuario" type="password" placeholder="Senha" class="form-control" required="required"></p>' +
-                    '<p><input autocomplete="off" name="user[password]" id="confirmacao_senha_usuario" type="password" placeholder="Confirme sua senha" class="form-control" required="required"></p>' +
-                    '<p><input name="commit" value="Cadastrar" class="btn btn-success btn-fill" data-disable-with="Cadastrar-se" type="submit"></p>' +       
-                    '</form>'
-            });
-        }
-
-        entrar(){
-            
-            Swal({
-                title: 'Login',
-                showConfirmButton: false,
-                html:
-                    '<form>' +
-                    '<p><input autofocus="autofocus" value="" name="usuario[email]" id="email_usuario" type="email" placeholder="E-mail" class="form-control" required="required"></p>' +
-                    '<p><input autocomplete="off" name="user[password]" id="senha_usuario" type="password" placeholder="Senha" class="form-control" required="required"></p>' +
-                    '<p><input name="commit" value="Entrar" class="btn btn-success btn-fill" data-disable-with="Entrar" type="submit"></p>' +
-                    '<p><a onclick="recuperar_senha()" class="btn btn-outline-success botao2_login" >Recuperar senha</a>' +
-                    ' <button type="button" class="btn btn-outline-success botao2_login" >Cadastre-se grátis</button></p>' +
-                    '</form>'
-            });
-        }
-
-        recuperar_senha(){
-            Swal({
-                title: 'Recuperação de Senha',
-                showConfirmButton: false,
-                html:
-                    '<form>' +
-                    '<p><input autofocus="autofocus" value="" name="usuario[email]" id="email_usuario" type="email" placeholder="E-mail" class="form-control" required="required"></p>' +
-                    ' <button type="button" class="btn btn-success botao2_login" >Recuperar senha</button></p>' +
-                    '</form>'
-            });
-        }
-    </script>
 </home>
