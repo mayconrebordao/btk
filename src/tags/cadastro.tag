@@ -13,6 +13,7 @@
                         <p><input autocomplete="off" name="user[password]" id="confirmacao_senha_usuario" type="password" placeholder="Confirme sua senha" class="form-control" required="required"></p>
                     </form>
                 </div>
+                <br>
                 <div class="modal-footer">
                     <input name="commit" value="Cadastrar" class="btn btn-success btn-fill btn-block" data-disable-with="Cadastrar-se" type="submit">
                 </div>
