@@ -1,5 +1,5 @@
-<editar_categoria>
-                            <div class="modal fade" id="editar_categoria">
+<editarCategoria>
+                            <div class="modal fade" id="editarCategoria">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
 
@@ -10,17 +10,17 @@
 
                                         <div class="modal-body">
                                             <div class="form-group">
-                                                <label for="categoria_nome">Novo nome:</label>
-                                                <input type="text" class="form-control" id="categoria_nome" placeholder="Digite um novo nome para a categoria.">
+                                                <label for="categoriaNome">Novo nome:</label>
+                                                <input type="text" class="form-control" id="categoriaNome" placeholder="Digite um novo nome para a categoria.">
                                             </div> 
                                         </div>
 
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-success" data-dismiss="modal">Editar</button>
-                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Voltar</button>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
-</editar_categoria>
+</editarCategoria>

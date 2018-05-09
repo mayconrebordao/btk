@@ -1,5 +1,5 @@
-<criar_tarefa>
-    <div class="modal fade" id="criar_tarefa">
+<criarTarefa>
+    <div class="modal fade" id="criarTarefa">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
@@ -12,21 +12,27 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-12">
-                                <label for="nome_tarefa">Qual a sua tarefa:</label>
-                                <input type="text" class="form-control" id="nome_tarefa" placeholder="Digite sua tarefa">
+                                <label for="nomeTarefa">Qual a sua tarefa:</label>
+                                <input type="text" class="form-control" id="nomeTarefa" placeholder="Digite sua tarefa">
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-md-12 text-left">
+                                <label id="descriçaoTarefa">Descrição: </label>
+                                <textarea id="descriçaoTarefa" name="comment" class="form-control">Descreva sua tarefa...</textarea>
                             </div>
                         </div><br>
                         <div class="row">
                             <div class="col-md-6 text-left">
                                 <div class="form-group">
-                                    <label for="prazo_tarefa">Prazo Final:</label>
-                                    <input type="date" class="form-control" id="prazo_tarefa">
+                                    <label for="prazoTarefa">Prazo Final:</label>
+                                    <input type="date" class="form-control" id="prazoTarefa">
                                 </div>
                             </div>
                             <div class="col-md-6 text-left">
                                 <div class="form-group">
-                                    <label for="horario_tarefa">Horário:</label>
-                                    <input type="time" class="form-control" id="horario_tarefa">
+                                    <label for="horarioTarefa">Horário:</label>
+                                    <input type="time" class="form-control" id="horarioTarefa">
                                 </div>
                             </div>
                         </div>
@@ -45,10 +51,10 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Criar</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Voltar</button>
                 </div>
 
             </div>
         </div>
     </div>
-</criar_tarefa>
+</criarTarefa>

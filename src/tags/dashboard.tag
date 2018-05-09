@@ -1,9 +1,11 @@
 <dashboard>
     <div>
-        <add_membro></add_membro>
-        <criar_grupo></criar_grupo>
-        <editar_categoria></editar_categoria>
-        <criar_tarefa></criar_tarefa>
+        <addMembro></addMembro>
+        <criarGrupo></criarGrupo>
+        <editarCategoria></editarCategoria>
+        <criarTarefa></criarTarefa>
+        <cadastrarCategoria></cadastrarCategoria>
+        <infoTarefa></infoTarefa>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
@@ -42,10 +44,10 @@
                             <option>Grupo 4</option>
                         </select>
                     </div>
-                    <div class="col-md-3"><a href="annotations.html" class="btn">Anotações</a></div>
-                    <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#add_membro"><img src="imgs/user.svg" width="22"> Cadastrar Categoria</a></div>
-                    <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#add_membro"><img src="imgs/user.svg" width="22"> Adicionar Membro</a></div>
-                    <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#criar_grupo"><img src="imgs/add-task.svg" width="22"> Adicionar Grupo</a></div>
+                    <div class="col-md-3"><a href="annotations.html" class="btn"><img src="imgs/comment.svg" width="22"> Anotações</a></div>
+                    <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#cadastrarCategoria"><img src="imgs/ranking.svg" width="22"> Cadastrar Categoria</a></div>
+                    <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#addMembro"><img src="imgs/user.svg" width="22"> Adicionar Membro</a></div>
+                    <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#criarGrupo"><img src="imgs/multiple.svg" width="22"> Adicionar Grupo</a></div>
                 </div>
                 
                 <div class="row" id="board">
@@ -55,17 +57,17 @@
                                 <h4>Categoria 1</h4>
                             </div>
                             <div class="col-md-3">
-                                <a href="" class="btn" data-toggle="modal" data-target="#editar_categoria"><img src="imgs/pencil.svg" width="20"></a>
+                                <a href="" class="btn" data-toggle="modal" data-target="#editarCategoria"><img src="imgs/pencil.svg" width="20"></a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criar_tarefa">Adicionar Tarefa</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 1</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 2</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 3</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 4</a></li>
+                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 1</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 2</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 3</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 4</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -77,17 +79,17 @@
                                 <h4>Categoria 2</h4>
                             </div>
                             <div class="col-md-3">
-                                <a href="" class="btn" data-toggle="modal" data-target="#editar_categoria"><img src="imgs/pencil.svg" width="20"></a>
+                                <a href="" class="btn" data-toggle="modal" data-target="#editarCategoria"><img src="imgs/pencil.svg" width="20"></a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criar_tarefa">Adicionar Tarefa</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 1</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 2</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 3</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 4</a></li>
+                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 1</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 2</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 3</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 4</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -98,17 +100,17 @@
                                 <h4>Categoria 3</h4>
                             </div>
                             <div class="col-md-3">
-                                <a href="" class="btn" data-toggle="modal" data-target="#editar_categoria"><img src="imgs/pencil.svg" width="20"></a>
+                                <a href="" class="btn" data-toggle="modal" data-target="#editarCategoria"><img src="imgs/pencil.svg" width="20"></a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criar_tarefa">Adicionar Tarefa</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 1</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 2</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 3</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 4</a></li>
+                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 1</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 2</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 3</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 4</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -119,17 +121,17 @@
                                 <h4>Categoria 4</h4>
                             </div>
                             <div class="col-md-3">
-                                <a href="" class="btn" data-toggle="modal" data-target="#editar_categoria"><img src="imgs/pencil.svg" width="20"></a>
+                                <a href="" class="btn" data-toggle="modal" data-target="#editarCategoria"><img src="imgs/pencil.svg" width="20"></a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criar_tarefa">Adicionar Tarefa</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 1</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 2</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 3</a></li>
-                                    <li class="list-group-item"><a href="task.html" class="task">Tarefa 4</a></li>
+                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 1</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 2</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 3</a></li>
+                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 4</a></li>
                                 </ul>
                             </div>
                         </div>
