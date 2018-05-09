@@ -15,7 +15,7 @@
                                 <label for="nome_tarefa">Qual a sua tarefa:</label>
                                 <input type="text" class="form-control" id="nome_tarefa" placeholder="Digite sua tarefa">
                             </div>
-                        </div>
+                        </div><br>
                         <div class="row">
                             <div class="col-md-6 text-left">
                                 <div class="form-group">
@@ -23,9 +23,6 @@
                                     <input type="date" class="form-control" id="prazo_tarefa">
                                 </div>
                             </div>
-                        </div>
-                    
-                        <div class="row">
                             <div class="col-md-6 text-left">
                                 <div class="form-group">
                                     <label for="horario_tarefa">Horário:</label>

@@ -1,7 +1,7 @@
 <app>
     <style>
     </style>
-    <home></home>
+    <!--  <home></home>  -->
     <dashboard></dashboard>
     <script>
     </script>
