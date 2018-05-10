@@ -44,94 +44,34 @@
                             <option>Grupo 4</option>
                         </select>
                     </div>
-                    <div class="col-md-3"><a href="annotations.html" class="btn"><img src="imgs/comment.svg" width="22"> Anotações</a></div>
-                    <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#cadastrarCategoria"><img src="imgs/ranking.svg" width="22"> Cadastrar Categoria</a></div>
+                    <div class="col-md-3"><a href="annotations.html" class="btn"><img src="imgs/review.svg" width="22"> Anotações</a></div>
+                    <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#cadastrarCategoria"><img src="imgs/category.svg" width="22"> Cadastrar Categoria</a></div>
                     <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#addMembro"><img src="imgs/user.svg" width="22"> Adicionar Membro</a></div>
                     <div class="col-md-2 text-right"><a href="" class="btn" data-toggle="modal" data-target="#criarGrupo"><img src="imgs/multiple.svg" width="22"> Adicionar Grupo</a></div>
                 </div>
                 
                 <div class="row" id="board">
-                    <div class="col-md-3 card">
+                    <div class="col-md-3 card" each={ categories } >
                         <div class="row group-category card-header">
                             <div class="col-md-9">
-                                <h4>Categoria 1</h4>
+                                <h4>{name}</h4>
                             </div>
                             <div class="col-md-3">
-                                <a href="" class="btn" data-toggle="modal" data-target="#editarCategoria"><img src="imgs/pencil.svg" width="20"></a>
+                                <a href="" class="btn" data-toggle="modal" data-target="#editarCategoria"><img src="imgs/edit.svg" width="20"></a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 1</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 2</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 3</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 4</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 card">
-                        <div class="row group-category card-header">
-                            <div class="col-md-9">
-                                <h4>Categoria 2</h4>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="" class="btn" data-toggle="modal" data-target="#editarCategoria"><img src="imgs/pencil.svg" width="20"></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 1</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 2</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 3</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 4</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card">
-                        <div class="row group-category card-header">
-                            <div class="col-md-9">
-                                <h4>Categoria 3</h4>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="" class="btn" data-toggle="modal" data-target="#editarCategoria"><img src="imgs/pencil.svg" width="20"></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 1</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 2</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 3</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 4</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card">
-                        <div class="row group-category card-header">
-                            <div class="col-md-9">
-                                <h4>Categoria 4</h4>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="" class="btn" data-toggle="modal" data-target="#editarCategoria"><img src="imgs/pencil.svg" width="20"></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 1</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 2</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 3</a></li>
-                                    <li class="list-group-item"><a href="" class="task" data-toggle="modal" data-target="#infoTarefa">Tarefa 4</a></li>
+                                    <li class="list-group-item">
+                                        <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a>
+                                    </li>
+                                    <li class="list-group-item" each={ categoryTasks(tasks, id) }>
+                                        <a href="" class="task" data-toggle="modal" data-target="#infoTarefa">
+                                            <p>{ title }</p>
+                                            <span class="task-description">{ description }</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -169,18 +109,45 @@
         padding: 10px;
         color: black;
         background: #ff8;
-        cursor: move;
         text-align: center;
         font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         box-shadow: 2px 2px 2px #eee;
+        line-height: 14px;
+    }
+    .task:hover{
+        text-decoration: none;
+    }
+    .task-description{
+        font-size: 10pt;
     }
 </style>
 <script>
-    let cards = document.querySelectorAll('.tasks');
-    for (let i = 0, n = cards.length; i < n; i++) {
-        let card = cards[i];
-        card.draggable = true;
-    };
-    
+    categoryTasks(tasks, category_id){
+        return tasks.filter(task => task.category_id == category_id);
+    }
+    this.categories = [
+        {id: 1, name: 'Categoria 1'},
+        {id: 2, name: 'Categoria 2'},
+        {id: 3, name: 'Categoria 3'},
+        {id: 4, name: 'Categoria 4'},
+    ];
+    this.tasks = [
+        {category_id: 1, title: 'Tarefa 1', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 1, title: 'Tarefa 2', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 1, title: 'Tarefa 3', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 1, title: 'Tarefa 4', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 2, title: 'Tarefa 1', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 2, title: 'Tarefa 2', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 2, title: 'Tarefa 3', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 2, title: 'Tarefa 4', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},        
+        {category_id: 3, title: 'Tarefa 1', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 3, title: 'Tarefa 2', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 3, title: 'Tarefa 3', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 3, title: 'Tarefa 4', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 4, title: 'Tarefa 1', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 4, title: 'Tarefa 2', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 4, title: 'Tarefa 3', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+        {category_id: 4, title: 'Tarefa 4', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
+    ];
 </script>
 </dashboard>
