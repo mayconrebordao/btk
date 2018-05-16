@@ -10,7 +10,7 @@
                         <p><input autofocus="autofocus" value="" name="usuario[email]" id="email_usuario" type="email" placeholder="E-mail" class="form-control" required="required"></p>
                     </div>
                     <div class="modal-footer">
-                        <li><input name="commit" value="Enviar" class="btn btn-success btn-fill btn-block" data-disable-with="Enviar" type="submit">
+                        <input name="commit" value="Enviar" class="btn btn-success btn-fill btn-block" data-disable-with="Enviar" type="submit">
                     </div>
                 </form>
             </div>
