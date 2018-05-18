@@ -16,3 +16,4 @@ instalação:
 ```
 [abrir aplicação](http://localhost:5500) ou use o go liveserver no VSCode Studio
 .
+.
