@@ -42,11 +42,13 @@
         }
     </style>
     <script>
+        this.mixin("state")
+        console.log(this.state)
         categoryTasks(tasks, category_id){
             return tasks.filter(task => task.category_id == category_id);
         }
         this.groups = [
-            {id: 1, name: 'Grupo 1'},
+            {id: 1, name: 'Grupo 1', id_dono, descricao},
             {id: 2, name: 'Grupo 2'},
             {id: 3, name: 'Grupo 3'},
             {id: 4, name: 'Grupo 4'},
@@ -58,24 +60,7 @@
             {id: 3, name: 'Categoria 3'},
             {id: 4, name: 'Categoria 4'},
         ];
-        this.tasks = [
-            {category_id: 1, title: 'Tarefa 1', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 1, title: 'Tarefa 2', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 1, title: 'Tarefa 3', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 1, title: 'Tarefa 4', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 2, title: 'Tarefa 1', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 2, title: 'Tarefa 2', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 2, title: 'Tarefa 3', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 2, title: 'Tarefa 4', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},        
-            {category_id: 3, title: 'Tarefa 1', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 3, title: 'Tarefa 2', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 3, title: 'Tarefa 3', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 3, title: 'Tarefa 4', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 4, title: 'Tarefa 1', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 4, title: 'Tarefa 2', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 4, title: 'Tarefa 3', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-            {category_id: 4, title: 'Tarefa 4', description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...'},
-        ];
+        this.tasks = this.state.dashboardReducer.tasks;
     </script>
     <addMembro></addMembro>
     <criarGrupo></criarGrupo>
