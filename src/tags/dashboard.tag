@@ -61,6 +61,8 @@
             {id: 4, name: 'Categoria 4'},
         ];
         this.tasks = this.state.dashboardReducer.tasks;
+        this.mixin('subscribeStateTag')
+        this.subscribeStateTag(this)
     </script>
     <addMembro></addMembro>
     <criarGrupo></criarGrupo>
@@ -125,7 +127,7 @@
                                 <li class="list-group-item">
                                     <a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#criarTarefa">Adicionar Tarefa</a>
                                 </li>
-                                <li class="list-group-item" each={ categoryTasks(tasks, id) }>
+                                <li class="list-group-item" each={ this.state.dashboardReducer.tasks }>
                                     <a href="" class="task" data-toggle="modal" data-target="#infoTarefa" onclick={current_task = id}>
                                         <p>{ title }</p>
                                         <span class="task-description">{ description }</span>

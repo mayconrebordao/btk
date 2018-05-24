@@ -54,11 +54,18 @@
     </div>
 
     <script>
+        this.mixin("reduxGlobal")
+        console.log('fora da funcao', this)
         newTask(){
-            let new_task = {category_id: document.getElementById('category_id').value, title: document.getElementById('task_name').value, description: document.getElementById('description').value, deadline: document.getElementById('deadline').value, users: document.getElementById('users').value};
+            console.log('state dentro da funcao', this)
+            let new_task = {category_id: Number(document.getElementById('category_id').value), title: document.getElementById('task_name').value, description: document.getElementById('description').value, deadline: document.getElementById('deadline').value, users: document.getElementById('users').value};
             
-            
-            console.log(new_task);
+            this.dispatch({
+                type: "ADD_TASK",
+                payload: {
+                    new_task
+                }
+  });
         }
     </script>
 </criarTarefa>

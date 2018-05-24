@@ -7,4 +7,5 @@ será executado através da comparação do type enviado com o primeiro parâmet
 
 export default function* rootSaga() {
     yield takeEvery("ROUTE", catchErrors, handleRoute);
+    yield takeEvery("ADD_TASK", sagasAux.addTask)
 }
